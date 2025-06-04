@@ -1,0 +1,159 @@
+/* Pseudo Class */
+/* Pseudo Class adalah selector yang digunakan untuk menentukan style pada elemen berdasarkan keadaan tertentu */
+
+/* PSEUDO CLASS YANG BERHUBUNGAN DENANG LINK */
+/* 
+link
+berfungsi untuk menentukan style pada elemen <a> yang belum diklik
+*/
+a {
+    color: blue;
+}
+
+h2 + a:link {
+    color: red;
+    text-decoration: none;
+}
+
+h2 + a:hover {
+    color: green;
+    background-color: yellow;
+}
+
+/* 
+:active
+berfungsi untuk menentukan style pada elemen/link yang sedang diklik
+*/
+
+h2 + a:active {
+    color: white;
+    font-size: 20px;
+    text-decoration: underline;
+    background-color: black;
+}
+
+/* 
+:visited
+berfungsi untuk menentukan style pada elemen/link yang sudah diklik
+*/
+
+h2 + a:visited {
+    color: purple;
+    text-decoration: none;
+}
+
+/* UJI COBA GABUT */
+h2:hover {
+    height: 30px;
+    width: 200px;
+    background-color: orange;
+    text-transform: uppercase;
+}
+
+/* PSEUDO CLASS YANG BERHUBUNGAN DENGAN POSISI ELEMEN */
+
+/* 
+:first-child
+berfungsi untuk menentukan style pada elemen yang merupakan anak pertama dari parent-nya
+*/
+
+li > a {
+    text-decoration: none;
+}
+
+ul li a:first-child {
+    color: royalblue;
+}
+
+ul li:first-child:hover {
+    background-color: black;
+}
+
+/* 
+:last-child 
+berfungsi untuk menentukan style pada elemen yang merupakan anak terakhir dari parent-nya
+*/
+
+ul li:last-child a{
+    color: red;
+}
+
+
+
+/* :nth-child 
+berfungsi untuk menentukan style pada elemen yang merupakan anak ke-n dari parent-nya
+-Jika ingin menerapkan style pada elemen yang merupakan anak ke-n, gunakan selector ini
+-Contoh: ul li:nth-child(2) a { color: green; } akan menerapkan style pada elemen <a> yang merupakan anak ke-2 dari <li> di dalam <ul>
+-Anda dapat menggunakan angka, kata kunci seperti odd (ganjil) atau even (genap), atau rumus seperti 2n+1 untuk menentukan elemen yang akan dipilih
+*/
+
+ul li:nth-child(2) a {
+    color: green;
+}
+
+ul li:nth-child(3) a {
+    color: orange;
+}
+
+ul li:nth-child(4) a {
+    color: purple;
+}
+
+ul li:nth-child(5) a {
+    color: yellow;
+}
+
+ul li:nth-child(6) a {
+    color: pink;
+}
+
+ul li:nth-child(7) a {
+    color: brown;
+}
+
+ul li:nth-child(8) a {
+    color: cyan;
+}
+
+ul li:nth-child(9) a {
+    color: gray;
+}
+
+/* GABUT UJI COBA */
+
+.isi {
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 7px;
+    text-align: justify;
+}
+
+.isi:hover{
+    border: 2px solid black;
+}
+}
+
+
+
+/* TAMBAHAN */
+
+/* 
+:first-of-type
+berfungsi untuk menentukan style pada elemen yang merupakan tipe pertama dari parent-nya
+*/
+
+.isi p:first-of-type {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-indent: 20px;
+}
+
+/* 
+:last-of-type
+berfungsi untuk menentukan style pada elemen yang merupakan tipe terakhir dari parent-nya
+*/
+
+.isi p:last-of-type {
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 20px;
+    color: darkblue;
+}
