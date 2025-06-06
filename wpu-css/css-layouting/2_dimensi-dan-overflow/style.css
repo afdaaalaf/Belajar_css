@@ -1,0 +1,69 @@
+/* Dimensi */
+
+/* 
+Dimensi adalah ukuran dari suatu elemen dalam CSS.
+Anda dapat mengatur dimensi elemen menggunakan properti `width` dan `height`.
+*/
+
+/* 
+Ukuran dapat ditentukan dalam berbagai satuan, seperti:
+- in (inci)
+- cm (sentimeter)
+- mm (milimeter)
+- pt (point, 1/72 inci)
+- pc (pica, 1/6 inci)
+- px (piksel)
+- em (ukuran font relatif)
+- rem (ukuran font relatif terhadap root)
+- % (persentase dari elemen induk, kontainer, atau browser)
+- vw (viewport width, 1% dari lebar viewport)
+- vh (viewport height, 1% dari tinggi viewport)
+- vmin (1% dari lebar atau tinggi viewport, mana yang lebih kecil)
+- vmax (1% dari lebar atau tinggi viewport, mana yang lebih besar)
+- auto (ukuran otomatis, biasanya digunakan untuk mengisi ruang yang tersedia)
+*/
+
+.display {
+    width: 130px;
+    height: 130px;
+    background-color: royalblue;
+}
+
+/* Dimensi dalam parent dan child */
+
+.parent {
+    width: 200px;
+    height: 200px;
+    background-color: lightcoral;
+}
+
+.child {
+    width: 130%;
+    background-color: lightgreen;
+}
+
+/* Overflow */
+
+
+/*  
+Overflow digunakan apabila konten di dalam elemen melebihi ukuran elemen tersebut.
+*/
+
+/* 
+Overflow dapat diatur dengan properti `overflow` yang memiliki beberapa nilai:
+- visible: Konten yang melebihi ukuran elemen akan tetap terlihat walau melebihi ukuran elemen (value bawaan).
+- hidden: konten yang melebihi ukuran elemen akan disembunyikan.
+- scroll: Apabila konten melebihi ukuran elemen, akan muncul scrollbar untuk menggulir konten. Pengguliran akan selalu tersedia walaupun konten tidak melebihi ukuran elemen.
+- auto: Apabila konten melebihi ukuran elemen, akan muncul scrollbar hanya jika diperlukan.
+- clip: Mirip dengan hidden, tetapi tidak akan menampilkan scrollbar.
+- ellipsis: Menampilkan tiga titik (...) pada akhir teks yang terpotong.
+*/
+
+.overflow {
+    text-align: justify;
+    width: 200px;
+    /* Bila height dihilangkan maka lebar elemen akan menyesuaikan konten di dalamnya */
+    height: 200px;
+    background-color: lightcoral;
+    overflow: scroll;
+}

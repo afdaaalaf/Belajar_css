@@ -1,0 +1,35 @@
+/* Display */
+
+/* 
+Display digunakan untuk menentukan bagaimana elemen akan ditampilkan di halaman web.
+Ada beberapa nilai yang umum digunakan:
+- block: Elemen akan ditampilkan sebagai blok, mengambil seluruh lebar yang tersedia.
+- inline: Elemen akan ditampilkan dalam bentuk baris, tidak dapat diatur tinggi dan lebarnya.
+- inline-block: Elemen akan ditampilkan dalam baris, tetapi dapat memiliki tinggi dan lebar yang ditentukan.
+- flex: Elemen akan ditampilkan sebagai kontainer fleksibel, memungkinkan tata letak yang responsif.
+- grid: Elemen akan ditampilkan sebagai kontainer grid, memungkinkan tata letak berbasis grid.
+- none: Elemen tidak akan ditampilkan sama sekali.
+*/
+
+.box {
+    height: 100px; /* height adalah tinggi dari elemen tersebut */
+    width: 100px; /* width adalah lebar dari elemen tersebut */
+    background-color: royalblue;
+    font-size: 30px;
+
+    /* Silahkan coba satu persatu */
+    /* Block */
+    display: block;
+
+    /* Inline */
+    /* display: inline; */
+
+    /* Inline Block */
+    /* display: inline-block; */
+
+    /* Flex */
+    /* display: flex; */
+
+    /* Grid */
+    /* display: grid; */
+}
