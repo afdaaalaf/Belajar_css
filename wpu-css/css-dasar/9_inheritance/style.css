@@ -1,0 +1,54 @@
+/* CSS INHERITANCE */
+/* 
+Inheritance pada css merupakan proses dimana elemen anak mewarisi properti dari elemen induknya.
+Contoh: 
+*/
+
+.parent {
+	color: blue;
+	font-size: 20px;
+}
+.child {
+	font-size: 18px; /* Inherits color from parent */
+}
+.no-inherit {
+	color: red; /* Does not inherit from parent */
+}
+
+/* 
+Pada dasarnya, tidak semua properti CSS dapat diwarisi.
+Beberapa properti seperti `color`, `font-family`, dan `line-height` akan diwarisi oleh elemen anak, sedangkan properti seperti `margin`, `padding`, dan `border` tidak akan diwarisi.
+Namun, Anda dapat mengatur properti CSS untuk diwarisi dengan menggunakan kata kunci `inherit`, `initial`, atau `unset`.
+*/
+
+/* CONTOH */
+
+ul li {
+    color: green; 
+    font-size: 16px; 
+}
+
+/* Hover cuma gabut */
+ul li:hover {
+    color: royalblue; /* Changes color on hover */
+    border-radius: 5px; /* Adds border radius on hover */
+    background-color: lightgray; /* Changes background color on hover */
+    padding: 5px; /* Adds padding on hover */
+    transition: all 0.3s ease; /* Adds transition effect */
+    text-decoration: underline;
+}
+
+a {
+    padding: 5px;
+    color: inherit; /* Inherits color from parent */
+    font-size: inherit; /* Inherits font-size from parent */
+
+    /* Removes underline & hover (cuma gabut ae gak ada hubungan nya sama inherit wkwkwk)*/
+    text-decoration: none; 
+}
+
+a:hover {
+    color: blue; /* Changes color on hover */
+}
+
+/* Pada dasarnya CSS hanya memberi warna pada ul dan li sendangkan a tidak inherit dengan ul dan li sehingga perlu menambahkan color dan font-size dengan value inherit pada a */

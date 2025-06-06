@@ -1,0 +1,62 @@
+/* background */
+
+/* 
+background-color 
+Berfungsi untuk mengatur warna latar belakang dari elemen HTML.
+- Warna dapat diatur dengan menggunakan nama warna, kode heksadesimal, atau nilai RGB.
+- Contoh: background-color: red; atau background-color: #ff0000; atau background-color: rgb(255, 0, 0);
+- Jika tidak diatur, elemen akan mewarisi warna latar belakang dari elemen induknya.
+*/
+
+/* 
+background-image 
+Berfungsi untuk mengatur gambar sebagai latar belakang dari elemen HTML.
+- Gambar dapat diatur dengan menggunakan URL gambar.
+- Gambar dapat diulang atau tidak, tergantung pada properti background-repeat.
+*/
+
+/* 
+backgrund-repeat
+Berfungsi untuk mengatur apakah gambar latar belakang akan diulang atau tidak.
+- Jika diatur ke "no-repeat", gambar tidak akan diulang.
+- Jika diatur ke "repeat", gambar akan diulang secara horizontal dan - vertikal.
+- Jika diatur ke "repeat-x", gambar akan diulang secara horizontal saja.
+- Jika diatur ke "repeat-y", gambar akan diulang secara vertikal saja.
+*/
+
+/* 
+background-size
+Berfungsi untuk mengatur ukuran gambar latar belakang.
+- Jika diatur ke "cover", gambar akan memenuhi seluruh elemen.
+- Jika diatur ke "contain", gambar akan diubah ukurannya agar sesuai dengan elemen tanpa mengubah rasio aspeknya.
+- Ukuran spesifik juga dapat ditentukan dengan menggunakan nilai piksel atau persentase.
+*/
+
+/* 
+background-position
+Berfungsi untuk mengatur posisi gambar latar belakang.
+- Gambar dapat diatur ke posisi tertentu seperti "top", "bottom", "left", "right", atau "center".
+- Posisi juga dapat diatur dengan menggunakan nilai piksel atau persentase.
+- Contoh: background-position: center; atau background-position: 50% 50%;
+*/
+
+/* 
+background
+Berfungsi untuk mengatur semua properti latar belakang sekaligus.
+- Properti ini dapat menggabungkan background-color, background-image, background-repeat, background-size, dan background-position.
+- Contoh: background: red url('image.jpg') no-repeat center/cover;
+*/
+
+body {
+    /* background-color: goldenrod;
+    background-image: url(img/preview-wallpaper-atlas-v0.3-rev2.1.png.webp);
+    background-size: cover; */
+    background: url(img/preview-wallpaper-atlas-v0.3-rev2.1.png.webp) repeat-y center/cover;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
