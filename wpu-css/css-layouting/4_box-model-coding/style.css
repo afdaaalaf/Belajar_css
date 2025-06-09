@@ -1,0 +1,53 @@
+/* MARGIN */
+
+/* Margin adalah suatu objek yang tidak terlihat dan biasa digunakan untuk memberi jarak antara elemen. 
+
+Overlap margin = Margin yang bertumpukan.
+*/
+
+/* 
+Macam-macam Margin:
+- Margin (Atas-kanan-bawah-kiri)
+- Margin-top (Atas)
+- Margin-right (Kanan)
+- Margin-bottom (Bawah)
+- Margin-left (kiri)
+*/
+
+/* Velue Pada Margin:
+- Sama seperti velue yang lain
+- Auto (menyesuaikan parent)
+- Minus (-) !Elemen dibawah nya juga akan ikut berpindah
+*/
+
+/* 
+Keanehan Pada Margin
+- Apabila `display` dari element di ubah `inline` atau `inline-block` maka secara otomatis element tersebut akan memiliki margin.
+
+Cara mengatasinya adalah menghapus spasi atau enter pada elemen di HTML.
+*/
+div {
+	display: block;
+}
+
+.satu {
+	height: 150px;
+	width: 150px;
+	background-color: blue;
+    margin: 20px auto;
+}
+
+.dua {
+	height: 90px;
+	width: 90px;
+	background-color: lightcoral;
+	margin-top: -130px;
+}
+
+.tiga {
+	height: 48px;
+	width: 48px;
+	background-color: lightgreen;
+	margin-top: 100px;
+}
+
