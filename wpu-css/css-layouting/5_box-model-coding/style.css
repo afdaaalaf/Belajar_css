@@ -1,0 +1,61 @@
+/* BOX MODEL */
+
+/* 
+Margin
+Margin merupakan area transparan di sekitar konten (diluar kotak).
+
+Macam-macam margin:
+- margin
+- margin-top
+- margin-right
+- margin-bottom
+- margin-left
+*/
+
+/* 
+Padding
+Padding merupakan suatu jarak atau area transparan antara konten dengan border.
+
+Nilai dari `padding` dapat ditulis seperti `margin` yaitu atas, kanan, bawah, kiri. Akan tetapi, `padding` tidak memiliki nilai negatif (-) dan `auto`.
+*/
+
+/* 
+Border
+Border adalah suatu pembatas disekeliling konten dan padding.
+
+Penulisan border:
+`border: ukuran/nilai style warna;
+
+Macam-macam border:
+- border
+- border-top
+- border-right
+- border-bottom
+- border-left
+
+Macam-macam style border:
+- Solid (Garis utuh)
+- Dotted (Titik-titik)
+- Dashed (Garis putus-putus)
+- Double (Solid akan tetapi terdapat 2 garis)
+*/
+
+/* 
+Box-sizing
+Box sizing adalah suatu element dari CSS3 yang berguna apabila ingin mengatur padding & border dari suatu konten namun tidak ingin ukuran dari konten tersebut bertambah.
+
+Box sizing bekerja dengan cara mengurangi ukuran dari konten dengan ukuran dari `padding` dan `border` sehingga ukurannya tidak bertambah.
+*/
+
+/* STYLE */
+
+div {
+    width: 300px;
+    height: 300px;
+    background-color: lightgreen;
+    margin: 30px auto;
+    padding: 20px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    text-align: justify;
+}
