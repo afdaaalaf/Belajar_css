@@ -1,0 +1,32 @@
+.container {
+    width: 500px;
+    border: 2px solid black;
+    margin: 20px auto;
+}
+
+.satu, .dua, .tiga {
+    padding: 2px;
+    /* Disini lah fungsi dari `box-sizing` */
+    box-sizing: border-box;
+}
+
+.satu {
+    width: 100px;
+    height: 200px;
+    background-color: lightgreen;
+    float: right;
+}
+
+.dua {
+    width: 300px;
+    height: 200px;
+    background-color: lightseagreen;
+    float: right;
+}
+
+.tiga {
+    width: 100px;
+    height: 200px;
+    background-color: saddlebrown;
+    float: right;
+}

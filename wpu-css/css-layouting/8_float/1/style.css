@@ -1,0 +1,60 @@
+/* FLOAT */
+
+/* 
+Float
+Float merupakan salah satu properti CSS yang digunakan untuk mengatur posisi dari suatu elemen atau konten. Float dapat digunakan untuk memaksa konten berpindah tempat sesuka kita.
+
+Ketika kita mengatur flow dari suatu elemen maka parent dan elemen lain di sekitar posisi awalnya akan menganggap bahwa elemen tersebut hilang atau tidak ada. Ini disebabkan karena elemen yang kita atur sendiri float nya akan keluar dari flow awalnya.
+*/
+
+/* 
+Flow terbagi menjadi 2: 
+- Normal flow
+- Out-of flow
+*/
+
+/* 
+Penggunaan flow:
+- Text wrapping (Membuat text mengelilingi gambar)
+- image gallery (Menata gambar seperti pada galeri)
+- multi-column layout (Membuat halaman dengan banyak kolom)
+- dll
+*/
+
+/* STYLE */
+
+.container {
+    width: 500px;
+    border: 1px solid black;
+    margin: auto;
+    padding: 4px;
+}
+
+
+.satu, .dua, .tiga, .empat {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-style: bold;
+    font-size: 20px;
+}
+
+.satu {
+    background-color: blue;
+}
+
+.dua {
+    background-color: lightgreen;
+    float: right;
+}
+
+.tiga {
+    background-color: red;
+    float: right;
+
+}
+
+/* Kotak ke-4 berada dibawah kotak nomor 1 karena kotak nomor 4 tidak mengganggap kotak nomor 1 ada (kotak nomor 1 tidak berada di flow yang sama dengan kotak nomor 4 */
+.empat {
+    background-color: tomato;
+}

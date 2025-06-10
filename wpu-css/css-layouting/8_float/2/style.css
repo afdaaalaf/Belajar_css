@@ -1,0 +1,17 @@
+.container {
+    width: 600px;
+    border: 2px solid black;
+    margin: auto;
+}
+
+.box {
+    width: 60px;
+    height: 60px;
+    margin: 2px;
+    background-color: royalblue;
+    float: right;
+}
+
+/* 
+Konten pertama akan dimulai mengikuti awal `float`.
+*/
