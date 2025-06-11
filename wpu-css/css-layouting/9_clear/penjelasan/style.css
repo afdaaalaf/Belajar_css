@@ -1,0 +1,83 @@
+/* CARA MENGHENTIKAN FLOAT */
+
+/* Macam-macam cara menghentikan `float`
+- Menggunakan overflow: auto; (tidak direkomendasikan karena bersifat "mengakali" bukan benar-benar menghentikan.
+- Menggunakan `div` kosong. `div` di tempatkan pada bagian HTML dimana kita akan memberhentikan `float` lalu diberi properti `clear` pada CSS.
+- Menggunakan micro clearfix. Dengan micro clearfix kita tidak perlu menambahkan `div` pada HTML kita.
+*/
+/* CLEAR */
+
+/* 
+Clear
+Clear berfungsi untuk menghentikan `flow`
+*/
+
+/* 
+Value pada clear:
+- Left (untuk menghentikan flow left)
+- Right (untuk menghentikan flow right)
+- Both (untuk menghentikan flow left dan right)
+*/
+
+/* Micro Clearfix */
+
+/* 
+Web micro clearfix
+https://nicolasgallagher.com/micro-clearfix-hack/
+*/
+
+/* STYLE */
+
+/* 
+Konten pertama akan dimulai mengikuti awal `float`.
+*/
+
+.container {
+    width: 600px;
+    border: 2px solid black;
+    margin: auto;
+    /* overflow: auto; Dengan overflow */
+
+}
+
+.box {
+    width: 60px;
+    height: 60px;
+    margin: 2px;
+    background-color: royalblue;
+    float: right;
+}
+
+/* Dengan `div` */
+.clear {
+    clear: right;
+}
+
+/* Dengan micro clearfix */
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    zoom: 1;
+}
