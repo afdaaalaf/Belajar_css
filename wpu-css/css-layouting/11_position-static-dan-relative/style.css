@@ -1,0 +1,45 @@
+/* POSITION */
+
+/* 
+Position
+Position adalah salah satu properti CSS yang digunakan untuk mengatur posisi suatu elemen.
+
+Position memiliki 4 value:
+- Static (default)
+- Relative
+- Absolute
+- Fixed
+
+Value selain static (non-static) seolah-olah memiliki dimensi yang berbeda. Kita juga dapat menggunakan properti `top`, `left`, `bottom`, dan `right` untuk mengatur posisinya apa bila menggunakan value non-static.
+
+Element yang diatur oleh `position` maka akan seperti berpindah dimensi atau maju dari posisi awalnya (tidak termasuk fixed).
+*/
+
+/* 
+Relative
+- Apabila menggunakan value relative maka posisi awal elemen tersebut akan tetap ada atau tidak terisi oleh elemen lainnya.
+- Value relative akan relatif terhadap posisi awalnya.
+- Apabila kita menggunakan properti top: 0; & left: 0; maka tidak akan terjadi perubahan.
+*/
+
+
+.satu {
+	background-color: aqua;
+	width: 100px;
+	height: 100px;
+}
+
+.dua {
+	background-color: greenyellow;
+	width: 100px;
+	height: 100px;
+    position: relative;
+    top: 50px;
+    left: 70px;
+}
+
+.tiga {
+	background-color: orange;
+	width: 100px;
+	height: 100px;
+}

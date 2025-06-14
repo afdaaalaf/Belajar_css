@@ -1,0 +1,78 @@
+/* POSITION */
+
+/* 
+Position
+Position adalah salah satu properti CSS yang digunakan untuk mengatur posisi suatu elemen.
+
+Position memiliki 4 value:
+- Static (default)
+- Relative
+- Absolute
+- Fixed
+
+Value selain static (non-static) seolah-olah memiliki dimensi yang berbeda. Kita juga dapat menggunakan properti `top`, `left`, `bottom`, dan `right` untuk mengatur posisinya apa bila menggunakan value non-static.
+
+Element yang diatur oleh `position` maka akan seperti berpindah dimensi atau maju dari posisi awalnya (tidak termasuk fixed).
+*/
+
+/* 
+Relative
+- Apabila menggunakan value relative maka posisi awal elemen tersebut akan tetap ada atau tidak terisi oleh elemen lainnya.
+- Value relative akan relatif terhadap posisi awalnya.
+- Apabila kita menggunakan properti top: 0; & left: 0; maka tidak akan terjadi perubahan.
+*/
+
+/* 
+Absolute
+- Apabila menggunakan value absolute maka posisi awal elemen tersebut akan terisi oleh elemen lain, ini yang membedakannya dengan relalive.
+- Value absolute akan relatif terhadap parentnya dan buka posisi awalnya. Apabila ingin mengaturnya maka diperlukan elemen parent dengan value non-static lainnya (relative), parentnya tidak memiliki properti `position: relative;` maka ia akan mencari parent di atasnya yang memiliki properti `position: relative;`.
+- Apabila kita menggunakan properti top: 0; & left: 0; maka ia akan berpindah tempat menuju atas kiri dari parentnya (seperti yang disebutkan pada point ke-2)
+*/
+
+/* 
+Fixed
+Value fixed memiliki sedikit kesamaan seperti value absolute. Perbedaanya terletak pada pemosisian relatifnya, value fixed akan relatif terhadap window browsernya dan buka parentnya meskipun parentnya non-static.
+
+Apabila kita meng-scroll halaman/window web tersebut elemen dengan value fixed akan tetap berada di layar tidak seperti non-static lainnya. Karena itulah value fixed biasa digunakan untuk membuat navigasi/menu pada halaman web.
+*/
+
+body {
+    height: 2000px;
+}
+
+/* Position `fixed` akan tetap berada pada tempatnya */
+.nav_fixed {
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    position: fixed;
+}
+
+.container {
+    width: 300px;
+    height: 400px;
+    border: 2px solid red;
+    margin: auto;
+    position: relative; /* Apabila properti `position` ini di hilangkan maka kotak ke-2 akan keluar dari `container` */
+}
+
+.satu {
+	background-color: aqua;
+	width: 100px;
+	height: 100px;
+}
+
+.dua {
+	background-color: greenyellow;
+	width: 100px;
+	height: 100px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.tiga {
+	background-color: orange;
+	width: 100px;
+	height: 100px;
+}
